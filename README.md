@@ -9,7 +9,7 @@
 > procesos cotidianos de administración residencial para
 > administradores, residentes y personal de portería.
 
-## Tabla de contenidos
+## Tabla de contenidos 
 
 -   [1. Estado del proyecto](#1-estado-del-proyecto)
 -   [2. Resumen ejecutivo](#2-resumen-ejecutivo)
@@ -24,12 +24,10 @@
 
 ## 1. Estado del proyecto
 
--   **Nombre:** ResiGestión Web: Sistema Integral de Administración de
+-   **Nombre:** ADopera: Sistema Integral de Administración de
     Unidades Residenciales.
 -   **Estado:** En desarrollo, según la información disponible.
--   **Versión:** \[Información pendiente de confirmar\].
--   **Estado de compilación (*build*):** No se dispone de información
-    verificable sobre un proceso automatizado de compilación.
+-   **Versión:** \[1.0\].
 
 Los badges anteriores describen el estado general y las tecnologías
 indicadas para el proyecto. No representan el resultado de una
