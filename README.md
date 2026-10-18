@@ -158,7 +158,7 @@ El siguiente diagrama representa la estructura de la base de datos, sus entidade
 
 ![Modelo Entidad-Relación de la base de datos](docs/MER.png)
 
-## 5. Stack tecnológico (pendiente)
+## 5. Stack tecnológico
 
   -----------------------------------------------------------------------
   Tecnología o            Versión utilizada       Propósito
@@ -183,11 +183,10 @@ El siguiente diagrama representa la estructura de la base de datos, sus entidade
   GitHub                  \[Información pendiente Alojamiento y
                           de confirmar\]          colaboración sobre el
                                                   repositorio, si aplica.
+  
+                                                  
   -----------------------------------------------------------------------
 
-No se han confirmado frameworks, bibliotecas externas, herramientas de
-pruebas, gestores de paquetes ni un motor de base de datos. Deben
-añadirse cuando se verifique su uso real en el proyecto.
 
 ## 6. Guía de configuración e instalación
 
@@ -213,36 +212,22 @@ el siguiente comando, reemplazando la URL de ejemplo por la dirección
 real:
 
 ``` bash
-git clone <URL_DEL_REPOSITORIO>
+git clone <https://github.com/Brandon-Gonzalez98/proyecto-integrador-b1-2026-2-g3.git>
 cd <CARPETA_DEL_PROYECTO>
 ```
 
-
-### Dependencias y variables de entorno
-
-No se ha documentado un gestor de paquetes, un archivo de dependencias
-ni variables de entorno. No se deben crear configuraciones de este tipo
-sin verificar que la implementación las requiera.
 
 ### Base de datos
 
 Pendiente de construccion 
 
-### Compilación y pruebas
-
-No se ha documentado un proceso de compilación, una herramienta de
-pruebas ni comandos automatizados. Si la aplicación utiliza únicamente
-HTML, CSS y JavaScript del lado del cliente, 
 
 ### Información necesaria para completar esta guía
 
 -   Nombre y ubicación del archivo HTML de entrada. Pendiente
 -   Estructura real de carpetas. Pendiente
--   [URL del repositorio](https://github.com/Brandon-Gonzalez98/proyecto-integrador-b1-2026-2.git)
+-   [URL del repositorio](https://github.com/Brandon-Gonzalez98/proyecto-integrador-b1-2026-2-g3.git)
 
-## 7. Flujo de trabajo y control de versiones
-
-Pendiente
 
 ### Flujo sugerido con Git
 
@@ -274,7 +259,7 @@ git commit -m "Describe el cambio realizado"
 git branch
 ```
 
-## 8. Licencia y créditos
+## 7. Licencia y créditos
 
 ### Equipo de trabajo
 
