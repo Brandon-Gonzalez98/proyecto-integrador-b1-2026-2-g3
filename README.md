@@ -1,4 +1,4 @@
-# ResiGestión Web
+# ADopera
 
 ### Sistema Integral de Administración de Unidades Residenciales
 
@@ -26,12 +26,8 @@
 
 -   **Nombre:** ADopera: Sistema Integral de Administración de
     Unidades Residenciales.
--   **Estado:** En desarrollo, según la información disponible.
+-   **Estado:** En desarrollo
 -   **Versión:** \[1.0\].
-
-Los badges anteriores describen el estado general y las tecnologías
-indicadas para el proyecto. No representan el resultado de una
-compilación o pruebas automatizadas.
 
 ## 2. Resumen ejecutivo
 
@@ -47,17 +43,13 @@ entre los residentes y la administración.
 
 ### Solución propuesta
 
-ResiGestión Web propone una interfaz web modular, intuitiva y dinámica,
-desarrollada con HTML, CSS y JavaScript moderno. La aplicación
+ADopera Web propone una interfaz web modular, intuitiva y dinámica,
+desarrollada con HTML, CSS, Maven, vaadin, SQL, Java y JavaScript moderno. La aplicación
 representa un entorno de trabajo con tres perfiles principales
----Administrador, Residente y Portero---, cada uno con opciones
+---Administrador, Residente y Porteria---, cada uno con opciones
 ajustadas a sus necesidades operativas.
 
-De acuerdo con la información disponible, la solución funciona del lado
-del cliente y utiliza estructuras de datos de JavaScript para gestionar
-información temporalmente. No se ha documentado un servidor de
-aplicación ni una base de datos persistente.
-
+La solución funciona del lado del cliente y utiliza estructuras de datos de JavaScript para gestionar información temporalmente. 
 ### Objetivo principal
 
 Automatizar y simplificar tareas cotidianas de la gestión residencial
@@ -104,17 +96,9 @@ información relacionada con usuarios, recibos, reservas y PQRS.
 ## 3. Arquitectura del sistema
 
 ### Descripción general
+Aplicación monolítica del lado del cliente (*client-side monolith*). La interfaz se representa en el navegador mediante HTML y CSS, mientras que JavaScript se encarga de la lógica de interacción, el procesamiento de datos temporales y la actualización dinámica de la página.
 
-El proyecto se describe como una aplicación monolítica del lado del
-cliente (*client-side monolith*). La interfaz se representa en el
-navegador mediante HTML y CSS, mientras que JavaScript se encarga de la
-lógica de interacción, el procesamiento de datos temporales y la
-actualización dinámica de la página.
 
-Aunque la descripción inicial utiliza el término «cliente-servidor
-simulado», no se ha documentado un servidor real. Por ello, la
-arquitectura descrita en este README se limita al funcionamiento del
-lado del cliente.
 
 ### Componentes principales
 
@@ -168,39 +152,11 @@ registros de usuarios, recibos, reservas y PQRS, gestionados mediante arreglos y
 Por esta razón, no se presenta un diagrama entidad-relación como si
 fuera el modelo implementado.
 
-### Entidades o conjuntos de información identificados
-
-  -----------------------------------------------------------------------
-  Conjunto de información Propósito conocido      Detalles pendientes
-  ----------------------- ----------------------- -----------------------
-  Usuarios                Representar los         Atributos,
-                          perfiles que            identificador único y
-                          interactúan con el      relaciones.
-                          sistema.                
-
-  Recibos                 Representar recibos de  Campos, estados,
-                          administración          fechas, valores y
-                          consultables por los    relación con usuarios o
-                          residentes.             unidades.
-
-  Reservas                Representar solicitudes Atributos,
-                          de uso de zonas         disponibilidad, estados
-                          comunes.                y reglas de
-                                                  solapamiento.
-
-  PQRS                    Representar peticiones, Campos, responsable,
-                          quejas, reclamos o      estado y seguimiento.
-                          sugerencias.            
-
-  Registros de portería   Registrar visitantes,   Estructura exacta y
-                          paquetería y novedades. relaciones con
-                                                  residentes o unidades.
-  -----------------------------------------------------------------------
-
 ### Diagrama MER
 
-**Estado:** pendiente de elaboración y validación.pendiente de creacion de ruta, a continuacion un ejemplo.
-`docs/diagrama-mer.png`, 
+El siguiente diagrama representa la estructura de la base de datos, sus entidades y las relaciones establecidas entre ellas.
+
+![Modelo Entidad-Relación de la base de datos](docs/MER.png)
 
 ## 5. Stack tecnológico (pendiente)
 
