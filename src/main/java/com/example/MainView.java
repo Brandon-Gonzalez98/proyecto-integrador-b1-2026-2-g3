@@ -28,8 +28,10 @@ public class MainView extends VerticalLayout {
         TabSheet tabSheet = new TabSheet();
         tabSheet.setWidthFull();
 
-        tabSheet.add("Entidad 1", crearSeccionEntidad1());
-        tabSheet.add("Entidad 2", crearSeccionEntidad2());
+        tabSheet.add("Apartamento", crearSeccionEntidad1());
+        tabSheet.add("Administrador", crearSeccionEntidad2());
+        tabSheet.add("Propiedad", crearSeccionEntidad2());
+        tabSheet.add("Residente", crearSeccionEntidad2());
 
         add(titulo, tabSheet);
     }
@@ -39,14 +41,14 @@ public class MainView extends VerticalLayout {
         VerticalLayout layout = new VerticalLayout();
         layout.setPadding(false);
 
-        TextField idField = new TextField("ID");
-        TextField nombreField = new TextField("Nombre");
-        TextField descripcionField = new TextField("Descripción");
+        TextField idField = new TextField("IdApto");
+        TextField aptoField = new TextField("NumeroApto");
+        TextField torreField = new TextField("Torre");
 
-        FormLayout form = new FormLayout(idField, nombreField, descripcionField);
+        FormLayout form = new FormLayout(idField, aptoField, torreField);
 
         Button btnCrear = new Button("Crear", e -> 
-            Notification.show("Entidad 1 - Crear: " + nombreField.getValue())
+            Notification.show("Entidad 1 - Crear: " + aptoField.getValue())
         );
         btnCrear.addThemeVariants(ButtonVariant.LUMO_PRIMARY);
 
@@ -65,8 +67,8 @@ public class MainView extends VerticalLayout {
 
         Button btnLimpiar = new Button("Limpiar", e -> {
             idField.clear();
-            nombreField.clear();
-            descripcionField.clear();
+            aptoField.clear();
+            torreField.clear();
         });
 
         HorizontalLayout acciones = new HorizontalLayout(
