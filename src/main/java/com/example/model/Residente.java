@@ -1,5 +1,6 @@
 package com.example.model;
 
-public class Residente {
+import java.time.LocalDate;
 
+public class Residente {
 }
