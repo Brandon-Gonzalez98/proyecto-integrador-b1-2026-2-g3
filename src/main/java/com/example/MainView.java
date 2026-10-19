@@ -23,7 +23,7 @@ public class MainView extends VerticalLayout {
         setPadding(true);
         setSpacing(true);
 
-        H2 titulo = new H2("ADopera");
+        H2 titulo = new H2("ADopera ");
 
         TabSheet tabSheet = new TabSheet();
         tabSheet.setWidthFull();
